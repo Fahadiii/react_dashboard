@@ -1,0 +1,30 @@
+.icon_style {
+  font-size: 4em;
+  margin-top: 15px;
+}
+
+.results tr[visible="false"],
+.no-result {
+  display: none;
+}
+
+.results tr[visible="true"] {
+  display: table-row;
+}
+
+.border_radius {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.pad_left {
+  padding-left: 20px;
+}
+
+.pad_20 {
+  padding: 20px;
+}
+
+.span_style {
+  font-size: 20px;
+}

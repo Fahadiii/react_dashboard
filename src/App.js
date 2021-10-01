@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import DashboardPage from "./components/DashBoard/DashBoard";
+import SideBar from "./components/SideBar/SideBar";
+import FirstList from "./Pages/FirstList";
+import SecondList from "./Pages/SecondList";
+import ThirdList from "./Pages/ThirdList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <div className="row">
+          <div className="col-sm-3 , background_3">
+            <SideBar />
+          </div>
+          <Switch>
+            <div className="col-sm-9">
+              <Route path="/" exact component={DashboardPage} />
+              <Route path="/first-list" component={FirstList} />
+              <Route path="/second-list" component={SecondList} />
+              <Route path="/third-list" component={ThirdList} />
+            </div>
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }

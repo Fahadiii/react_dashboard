@@ -1,0 +1,26 @@
+.top_div {
+  background-color: white;
+  height: 1px;
+  margin-top: 30px;
+}
+
+.main_div {
+  text-align: center;
+  padding: 30px;
+}
+
+.top_margin_30 {
+  margin-top: 30px;
+}
+
+.top_margin_60 {
+  margin-top: 60px;
+}
+
+.App {
+  text-align: center;
+}
+.logoimg {
+  width: 60%;
+  height: auto;
+}
